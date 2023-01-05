@@ -1,0 +1,19 @@
+[package]
+name = "openimc"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+name = "openimc"
+crate-type = ["cdylib"]
+
+
+[dependencies]
+pyo3 = { version = "0.17", features = ["extension-module"] }
+cxx = "1.0"
+thread-priority = "0.10"
+
+
+[build-dependencies]
+cxx-build = "1.0"
