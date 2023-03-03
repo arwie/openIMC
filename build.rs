@@ -4,6 +4,5 @@ fn main() {
 		.file("src/motion/ruckig.cc")
 		.flag_if_supported("-std=c++20")
 		.compile("openimc");
-		
-		println!("cargo:rustc-link-lib=ruckig")
+	println!("cargo:rustc-link-lib=ruckig");
 }

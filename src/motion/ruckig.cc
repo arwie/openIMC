@@ -6,7 +6,7 @@ using namespace std;
 using namespace ruckig;
 
 
-Ruckig<5> otg {0.01};
+Ruckig<5> otg {0.004};
 InputParameter<5> input;
 OutputParameter<5> output;
 Result status;

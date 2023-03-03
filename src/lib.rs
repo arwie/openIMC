@@ -1,6 +1,7 @@
 use pyo3::prelude::*;
 
 
+mod ethercat;
 mod motion;
 
 
@@ -17,6 +18,8 @@ fn get_joints() -> PyResult<Vec<f64>> {
 
 #[pymodule]
 fn openimc(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+	
+	ethercat::init();
 	motion::init();
 	
     m.add_function(wrap_pyfunction!(move_joints, m)?)?;

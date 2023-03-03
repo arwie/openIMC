@@ -10,8 +10,11 @@ crate-type = ["cdylib"]
 
 
 [dependencies]
-pyo3 = { version = "0.17", features = ["extension-module"] }
+once_cell = "1.17"
+pyo3 = "0.18"
 cxx = "1.0"
+ethercat = "0.2.4"
+byteorder = "1.4"
 thread-priority = "0.10"
 
 
